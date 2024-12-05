@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #fff;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .navbar a {
+      display: inline-block;
+      color: #fff;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    .header {
+      text-align: center;
+      background-color: #7BCCB5;
+      border-style: solid;
+      border-width: 3px;
+      margin: 20px;
+      border-radius: 10px;
+      padding: 30px;
+      border-color: #333;
+    }
+
+    .home-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .home-buttons .button {
+      background-color: #7BCCB5;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      width: 200px;
+      text-align: center;
+    }
+
+    .home-buttons .button:hover {
+      background-color: #333;
+    }
+
+    /* Shortcut Buttons (fixed to the bottom) */
+    .shortcuts {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .shortcut-btn {
+      background-color: #7BCCB5;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .shortcut-btn:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="Home.html">Home</a>
+    <a href="skillsandtechnique.html">Skills and Techniques</a>
+    <a href="educationalbackground.html">Educational Background</a>
+  </div>
+
+  <!-- Home Page Section -->
+  <div class="header" id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is the home page where you can learn about me, my projects, and how to contact me.</p>
+  </div>
+
+  <!-- New Buttons Section -->
+  <div class="home-buttons">
+    <button class="button" onclick="window.location.href='skillsandtechnique.html';">Skills and Techniques</button>
+    <button class="button" onclick="window.location.href='educationalbackground.html';">Educational Background</button>
+  </div>
+
+  <!-- Shortcut Buttons -->
+  <div class="shortcuts">
+    <button class="shortcut-btn" onclick="window.location.href='skillsandtechnique.html';">Go to Skills</button>
+    <button class="shortcut-btn" onclick="window.location.href='educationalbackground.html';">Go to Education</button>
+  </div>
+
+</body>
+</html>
